@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react'
+import React, { useCallback, useRef, useContext } from 'react'
 import {
   Image,
   KeyboardAvoidingView,
@@ -8,6 +8,9 @@ import {
   TextInput,
   Alert,
 } from 'react-native'
+
+import { ThemeContext } from 'styled-components'
+
 import Icon from 'react-native-vector-icons/Feather'
 import { useNavigation } from '@react-navigation/native'
 import * as Yup from 'yup'
@@ -84,6 +87,8 @@ const SignIn: React.FC = () => {
     [signIn],
   )
 
+  const { logo } = useContext(ThemeContext)
+
   return (
     <>
       <KeyboardAvoidingView
@@ -96,7 +101,7 @@ const SignIn: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-            <Image source={logoImg} />
+            <Image source={logo} />
 
             <View>
               <Title>Faça seu logon</Title>

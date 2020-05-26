@@ -1,21 +1,29 @@
 import 'react-native-gesture-handler'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { View, StatusBar } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 
-import Light from './styles/themes/light'
-import Dark from './styles/themes/dark'
+import ThemeSwitcher from './components/ThemeSwitcher'
+
+import light from './styles/themes/light'
+import dark from './styles/themes/dark'
 
 import Routes from './routes'
 
 import AppProvider from './hooks'
 
 const App: React.FC = () => {
+  const [theme, setTheme] = useState(light)
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light)
+  }
+
   return (
     <NavigationContainer>
-      <ThemeProvider theme={Light}>
+      <ThemeProvider theme={theme}>
         <StatusBar
           barStyle="light-content"
           backgroundColor="#312e38"
@@ -24,6 +32,7 @@ const App: React.FC = () => {
         <AppProvider>
           <View style={{ flex: 1, backgroundColor: '#312e38' }}>
             <Routes />
+            <ThemeSwitcher toggleTheme={toggleTheme} />
           </View>
         </AppProvider>
       </ThemeProvider>

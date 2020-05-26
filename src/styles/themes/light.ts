@@ -1,8 +1,8 @@
-// import logoL from '../../assets/logoL.svg'
+import logoL from '../../assets/logoL.png'
 
 export default {
   title: 'light',
-  // logo: `${logoL}`,
+  logo: `${logoL}`,
 
   colors: {
     primary: 'linear-gradient(90deg, #FFFFFF 0%, #ff9000 100%)',
