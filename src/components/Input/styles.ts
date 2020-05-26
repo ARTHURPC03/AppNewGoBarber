@@ -10,10 +10,10 @@ export const Container = styled.View<ContainerProps>`
   width: 100%;
   height: 60px;
   padding: 0 16px;
-  background: #232129;
+  background: ${props => props.theme.colors.li};
   margin-bottom: 8px;
   border-width: 2px;
-  border-color: #232129;
+  border-color: ${props => props.theme.colors.li};
 
   flex-direction: row;
   align-items: center;
