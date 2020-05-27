@@ -1,17 +1,16 @@
 import React from 'react'
-import { View, Button } from 'react-native'
 
 import { useAuth } from '../../hooks/auth'
 
-// import { Container } from './styles';
+import { Container, Button } from './styles'
 
 const Dashboard: React.FC = () => {
   const { signOut } = useAuth()
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center' }}>
+    <Container>
       <Button title="Sair" onPress={signOut} />
-    </View>
+    </Container>
   )
 }
 

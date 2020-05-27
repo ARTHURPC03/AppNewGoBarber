@@ -25,8 +25,6 @@ import getValidationErrors from '../../utils/getValidationErrors'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 
-import logoImg from '../../assets/logo.png'
-
 import {
   Container,
   Title,

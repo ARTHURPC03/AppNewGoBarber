@@ -4,6 +4,7 @@ import { getBottomSpace } from 'react-native-iphone-x-helper'
 
 export const Container = styled.View`
   flex: 1;
+  background: ${props => props.theme.colors.background};
   align-items: center;
   justify-content: center;
   padding: 0 30px ${Platform.OS === 'android' ? 150 : 40}px;
@@ -11,7 +12,7 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   font-size: 24px;
-  color: #f4ede8;
+  color: ${props => props.theme.colors.text};
   font-family: 'RobotoSlab-Medium';
   margin: 64px 0 24px;
 `
@@ -21,9 +22,9 @@ export const BackToSignIn = styled.TouchableOpacity`
   left: 0;
   bottom: 0;
   right: 0;
-  background: #312e38;
+  background: ${props => props.theme.colors.background};
   border-top-width: 1px;
-  border-color: #232129;
+  border-color: ${props => props.theme.colors.li};
   padding: 16px 0 ${16 + getBottomSpace()}px;
 
   justify-content: center;
@@ -32,7 +33,7 @@ export const BackToSignIn = styled.TouchableOpacity`
 `
 
 export const BackToSignInText = styled.Text`
-  color: #fff;
+  color: ${props => props.theme.colors.text};
   font-size: 18px;
   font-family: 'RoboSlab-Regular';
   margin-left: 16px;

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import 'react-native-gesture-handler'
 
 import React, { useState } from 'react'
@@ -15,10 +16,10 @@ import Routes from './routes'
 import AppProvider from './hooks'
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState(light)
+  const [theme, setTheme] = useState(dark)
 
   const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light)
+    setTheme(theme.title === 'dark' ? light : dark)
   }
 
   return (
@@ -30,7 +31,12 @@ const App: React.FC = () => {
           translucent
         />
         <AppProvider>
-          <View style={{ flex: 1, backgroundColor: '#312e38' }}>
+          <View
+            style={{
+              flex: 1,
+              backgroundColor: '#312e38',
+            }}
+          >
             <Routes />
             <ThemeSwitcher toggleTheme={toggleTheme} />
           </View>
