@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Switch } from 'react-native'
 import { ThemeContext } from 'styled-components'
 
 import Icon from 'react-native-vector-icons/Feather'
@@ -11,7 +10,7 @@ interface Props {
 }
 
 const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }) => {
-  const { colors, title } = useContext(ThemeContext)
+  const { title } = useContext(ThemeContext)
 
   return (
     <Container>
