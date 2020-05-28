@@ -6,8 +6,9 @@
 ## :camera: Veja:
 
 ### Mobile
-![MObile GIF](github/AppGobarber.gif)
-
+<div align="center" >
+<img src="./github/appgobarber.gif" alt="demo-mobile" height="425">
+</div>
 
 # GoBarber
 GoBarber é um aplicativo que permite aos usuários agendar uma consulta com seu barbeiro favorito e mostra ao barbeiro sua agenda para o dia.
