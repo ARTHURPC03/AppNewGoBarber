@@ -6,8 +6,9 @@
 ## :camera: Veja:
 
 ### Mobile
+
 <div align="center" >
-<img src="./github/AppGoBarber.gif" alt="demo-mobile" height="425">
+  <img src="./github/AppGobarber.gif" alt="demo-mobile" height="425">
 </div>
 
 # GoBarber
