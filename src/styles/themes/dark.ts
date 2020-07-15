@@ -1,10 +1,8 @@
-// import logo from '../../assets/logo/logo.png'
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const logo = require('../../assets/logo/logo.png')
+import logo from '../../assets/logo/logo.png'
 
 export default {
   title: 'dark',
-  logo: `${logo}`,
+  logo,
 
   colors: {
     primary: '#000000',
