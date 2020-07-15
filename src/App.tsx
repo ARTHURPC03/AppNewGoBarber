@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import 'react-native-gesture-handler'
 
 import React, { useState } from 'react'
@@ -18,7 +17,7 @@ import AppProvider from './hooks'
 const App: React.FC = () => {
   const [theme, setTheme] = useState(dark)
 
-  const toggleTheme = () => {
+  const toggleTheme = (): void => {
     setTheme(theme.title === 'dark' ? light : dark)
   }
 

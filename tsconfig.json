@@ -59,7 +59,6 @@
   "exclude": [
     "node_modules", "babel.config.js", "metro.config.js", "jest.config.js"
   ],
-  "files": [
-    "src/styles/styled.d.ts"
-  ]
+  "include": ["**/src/**/*.ts", "**/src/**/*.tsx"],
+  "files": ["src/@types/index.d.ts"]
 }

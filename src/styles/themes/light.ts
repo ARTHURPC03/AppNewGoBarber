@@ -1,11 +1,13 @@
-import logoL from '../../assets/logoL.png'
+// import logoL from '../../assets/logoL/logoL.png'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const logoL = require('../../assets/logoL/logoL.png')
 
 export default {
   title: 'light',
   logo: `${logoL}`,
 
   colors: {
-    primary: 'linear-gradient(90deg, #FFFFFF 0%, #ff9000 100%)',
+    primary: '#FFFFFF',
     secundary: '#0d0d0d',
 
     background: '#E5E5E5',

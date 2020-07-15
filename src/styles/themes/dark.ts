@@ -1,12 +1,14 @@
-import logo from '../../assets/logo.png'
+// import logo from '../../assets/logo/logo.png'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const logo = require('../../assets/logo/logo.png')
 
 export default {
   title: 'dark',
   logo: `${logo}`,
 
   colors: {
-    primary: 'linear-gradient(90deg, #000000 0%, #312e38 100%)',
-    secundary: 'linear-gradient(270deg, #FFE53B 0%, #FF2525 100%)',
+    primary: '#000000',
+    secundary: '#FF2525',
 
     background: '#312E38',
     li: '#232129',
