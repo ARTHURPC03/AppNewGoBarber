@@ -140,6 +140,7 @@ const SignIn: React.FC = () => {
               </Button>
             </Form>
 
+            {/* eslint-disable-next-line @typescript-eslint/no-empty-function */}
             <ForgotPassword onPress={() => {}}>
               <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
             </ForgotPassword>
