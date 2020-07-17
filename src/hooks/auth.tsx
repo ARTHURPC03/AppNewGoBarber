@@ -5,7 +5,9 @@ import React, {
   useContext,
   useEffect,
 } from 'react'
+
 import AsyncStorage from '@react-native-community/async-storage'
+
 import api from '../services/api'
 
 interface User {
@@ -53,8 +55,9 @@ const AuthProvider: React.FC = ({ children }) => {
 
       setLoading(false)
     }
+
     loadStorageData()
-  })
+  }, [])
 
   const signIn = useCallback(async ({ email, password }) => {
     const response = await api.post('sessions', {
