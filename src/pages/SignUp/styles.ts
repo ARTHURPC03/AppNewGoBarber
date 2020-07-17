@@ -35,6 +35,6 @@ export const BackToSignIn = styled.TouchableOpacity`
 export const BackToSignInText = styled.Text`
   color: ${props => props.theme.colors.text};
   font-size: 18px;
-  font-family: 'RoboSlab-Regular';
+  font-family: 'RobotoSlab-Regular';
   margin-left: 16px;
 `

@@ -35,7 +35,7 @@ export const TextInput = styled.TextInput`
   flex: 1;
   color: ${props => props.theme.colors.inputColor};
   font-size: 16px;
-  font-family: 'RoboSlab-Regular';
+  font-family: 'RobotoSlab-Regular';
 `
 
 export const Icon = styled(FeatherIcon)`

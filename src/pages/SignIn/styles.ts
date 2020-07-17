@@ -44,6 +44,6 @@ export const CreateAccountButton = styled.TouchableOpacity`
 export const CreateAccountButtonText = styled.Text`
   color: #ff9000;
   font-size: 18px;
-  font-family: 'RoboSlab-Regular';
+  font-family: 'RobotoSlab-Regular';
   margin-left: 16px;
 `
