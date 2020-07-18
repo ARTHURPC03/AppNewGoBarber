@@ -136,15 +136,14 @@ const SignUp: React.FC = () => {
                 textContentType="newPassword"
                 onSubmitEditing={() => formRef.current?.submitForm()}
               />
-
-              <Button
-                onPress={() => {
-                  formRef.current?.submitForm()
-                }}
-              >
-                Criar
-              </Button>
             </Form>
+            <Button
+              onPress={() => {
+                formRef.current?.submitForm()
+              }}
+            >
+              Criar
+            </Button>
           </Container>
         </ScrollView>
       </KeyboardAvoidingView>

@@ -130,15 +130,14 @@ const SignIn: React.FC = () => {
                   formRef.current?.submitForm()
                 }}
               />
-
-              <Button
-                onPress={() => {
-                  formRef.current?.submitForm()
-                }}
-              >
-                Entrar
-              </Button>
             </Form>
+            <Button
+              onPress={() => {
+                formRef.current?.submitForm()
+              }}
+            >
+              Entrar
+            </Button>
 
             {/* eslint-disable-next-line @typescript-eslint/no-empty-function */}
             <ForgotPassword onPress={() => {}}>
