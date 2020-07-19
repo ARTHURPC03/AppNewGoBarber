@@ -58,9 +58,14 @@ const Dashboard: React.FC = () => {
           Bem vindo, {'\n'}
           <UserName>{user.name}</UserName>
         </HeaderTitle>
-        {/* <Button title="sair" onPress={() => signOut()} /> */}
         <ProfileButton onPress={navigateToProfile}>
-          <UserAvatar source={{ uri: user.avatar_url }} />
+          <UserAvatar
+            source={{
+              uri:
+                user.avatar_url ||
+                'https://api.adorable.io/avatars/72/abott@adorable.png',
+            }}
+          />
         </ProfileButton>
       </Header>
 
