@@ -27,6 +27,14 @@ Desenvolvido com React Native + typescript
 
 ✔️Styled-components
 
+✔️Date Time Picker
+
+✔️Unform
+
+✔️Date-fns
+
+✔️Yup
+
 ✔️Docker
 
 ✔️PostgreSQL
@@ -34,6 +42,12 @@ Desenvolvido com React Native + typescript
 ✔️Node
 
 ✔️Axios
+
+✔️Eslint
+
+✔️Prettier
+
+✔️EditorConfig
 
 
 
